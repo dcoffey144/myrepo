@@ -1,0 +1,151 @@
+.mainHeader {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+  }
+  
+  .logoDrawerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    height: 3rem;
+    background-position: center;
+    object-fit: cover;
+  }
+  
+  .drawerButton {
+    width: 2rem;
+    height: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #495e57;
+    border-radius: 0.5rem;
+  }
+  .drawerButton span {
+    width: 60%;
+    height: 100%;
+    border-bottom: 2px solid #495e57;
+  }
+  .drawerButton :last-child {
+    border-bottom: none;
+  }
+  
+  .nav {
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navUl {
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    flex-shrink: 0;
+    border: 0;
+    padding:0.0rem 0.0rem;
+    border-radius: 1rem;
+  }
+  
+  .navUl :hover {
+    /*color: rgb(233, 195, 60);*/
+    /*border-bottom: rgb(233, 195, 60) 1px solid;*/
+    /*background-color: black;*/
+    /*padding: 0.5rem 1rem;*/ 
+    /*height: 1rem;*/
+    margin: 0 0.25rem;
+    border: 0;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 1rem;
+    background-color: rgb(235, 180, 15);
+  }
+  
+  .navUl li {
+    margin: 0 0.25rem;
+    font-weight: 600;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.5rem;
+    border-radius: 1rem;
+  }
+  
+  .navUl li a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 0.25rem;
+    font-weight: 600;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    padding-bottom: 1.25rem;
+    border-radius: 1rem;
+    border:0rem;
+  }
+  
+  .navUl li a :visited {
+    color: #000;
+    height: 1rem;
+    border:0rem;
+    margin: 0 0.25rem;
+    padding-left: 0.0rem;
+    padding-right: 0.0rem;
+    padding-bottom: 0.25rem;
+    border-radius: 1rem;
+    background-color: rgb(235, 180, 15);
+    
+  }
+  @media (max-width: 820px) {
+    .logo {
+      padding-bottom: 1rem;
+    }
+    .mainHeader {
+      height: 100%;
+    }
+    .nav {
+      height: 100%;
+      width: 40rem;
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+    }
+    .drawerButton {
+      display: flex;
+    }
+  
+    .navUl {
+      padding: 1rem 0;
+      height: 100%;
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      text-decoration: none;
+      list-style-type: none;
+    }
+    .navUl li {
+      border-bottom: rgb(5, 120, 120) 1px solid;
+      margin-bottom: 0.5rem;
+    }
+    .drawerOpen {
+      display: flex;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .nav {
+      width: 90%;
+    }
+  }
+  
