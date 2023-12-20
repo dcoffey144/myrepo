@@ -29,6 +29,7 @@ export default function Hightlights() {
           title="Greek Salad"
           price="$12.99"
           description="A traditional Greek salad consists of sliced cucumbers, tomatoes, green bell pepper, red onion, olives, and feta cheese."
+          alt="an ugly bowl of rice"
         />
         <Card
           image={gyroImg}
@@ -36,6 +37,7 @@ export default function Hightlights() {
           title="Gyro"
           price="$10.99"
           description="A Greek dish of roasted meat served in a pita, usually with tomato, onion, and tzatziki, a cold, creamy sauce made from yogurt, cucumber, garlic, and various spices."
+          alt="just imagine 3 day old road kill"
         />
         <Card
           image={spaghettiImg}
@@ -43,6 +45,7 @@ export default function Hightlights() {
           title="Spaghetti"
           price="$12.99"
           description="Our favorite weeknight friendly spaghetti recipe with a meat sauce that is made completely from scratch. Use ground beef, turkey, pork, chicken or lamb to make it!"
+          alt="a flattened skunk scrapped off of the road"
         />
       </div>
     </section>

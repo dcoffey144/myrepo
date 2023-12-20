@@ -13,20 +13,9 @@ export default function Footer() {
         </li>
         </div>
         <div className="main-container">
-        
             <p>101 Wayoutthere Lane,</p>
             <p>Chicago Illinois</p>
-
             <p>(301)-555-1212</p>
-            <br></br>
-            <a
-              href="mailto: info@littlelemon.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              info@littlelemon.com
-            </a>
-
       </div>
       </section>
     </footer>
