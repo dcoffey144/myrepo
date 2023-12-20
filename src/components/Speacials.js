@@ -3,7 +3,7 @@ import Card from "./Card";
 import saladImg from "../images/salad.jpg";
 import gyroImg from "../images/Gyro.jpg";
 import spaghettiImg from "../images/spaghetti.jpg";
-import classes from "./Speacials.module.css";
+import classes from "../css/Speacials.module.css";
 
 export default function Hightlights() {
   return (

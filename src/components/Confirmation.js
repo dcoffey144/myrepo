@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import "./Confirmation.css"
+import "../css/Confirmation.css"
 export default function Confirmation() {
   return (
     <header className="confirmation-header">

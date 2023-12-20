@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./BookingForm.css";
-import classes from "./Main.module.css";
+import  "../css/ReserveForm.css";
+
 import appImg from "../images/Reserve.jpg"
 
-export default function ReservationForm(props) {
+export default function ReserveForm(props) {
   const [fName, setFName] = useState("");
   const [lName, setLName] = useState("");
   const [email, setEmail] = useState("");
@@ -14,11 +14,9 @@ export default function ReservationForm(props) {
   const [occasion, setOccasion] = useState("");
   const [preferences, setPreferences] = useState("");
   const [comments, setComments] = useState("");
-
   const [finalTime, setFinalTime] = useState(
     props.availableTimes.map((times) => <option>{times}</option>)
   );
-
   function handleDateChange(e) {
     setDate(e.target.value);
 
@@ -28,14 +26,16 @@ export default function ReservationForm(props) {
     props.updateTimes(date);
 
     setFinalTime(props.availableTimes.map((times) => <option>{times}</option>));
-  }
+  }  
 
   return (
-
+<section name='reservations' className='booking-form'>
+<div className='bookings-container'>
+        <h2 className='booking-header'>Little Lemon</h2>
+        <h2 className='booking-subheader'>Chicago</h2>
+        <h1 className='booking-title'>Reserve a Table for any occasion</h1>
     <form className="reservation-form">
-          <section className={classes.main}>
-       <img src={appImg} alt="Appetizer" className={classes.reserveImg} />
-    </section>
+
       <div>
         <label htmlFor="fName">First Name</label> <br></br>
         <input
@@ -163,19 +163,14 @@ export default function ReservationForm(props) {
           onChange={(e) => setComments(e.target.value)}
         ></textarea>
       </div>
-
-      <div>
-        <br></br>
-        <small>
-          <p>
-            Note: You cannot edit your reservation after submission. Please
-            double-check your answer before submitting your reservation request.
-          </p>
-        </small>
         <Link className="action-button" to="/confirmation">
-          Book Table
+        <button type='submit' className='booking-button'>
+            Confirm reservation
+          </button>
         </Link>
-      </div>
+
     </form>
+    </div>
+    </section>
   );
 }

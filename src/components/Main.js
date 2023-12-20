@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import appImg from "../images/bacon.jpg";
-import classes from "./Main.module.css";
+import classes from "../css/Main.module.css";
 
 export default function Main() {
   return (

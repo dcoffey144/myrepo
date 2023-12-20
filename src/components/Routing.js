@@ -1,13 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../components/HomePage"
-import Reservation from "../components/BookingPage";
+import Reservation from "./ReservePage";
 import Confirmation from "../components/Confirmation";
 
-/*import About from "./pages/About";
-import Reservation from "./pages/BookingPage";
-import Order from "./pages/Order";
-import Login from "./pages/Login";
-import Confirmation from "./pages/Confirmation";*/
 
 export default function Routing() {
   return (
@@ -19,15 +14,3 @@ export default function Routing() {
     </Routes>
   );
 }
-
-/*
-    <Routes>
-      <Route path="/" element={<Homepage />} />
-
-      <Route path="/about" element={<About />} />
-      <Route path="/reservations" element={<Reservation />} />
-      <Route path="/order" element={<Order />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/confirmation" element={<Confirmation />} />
-    </Routes>
-    */

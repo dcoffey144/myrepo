@@ -1,0 +1,48 @@
+
+footer {
+    min-height: 13rem;
+    background-color: #495e57;
+    color: #ffffff;
+    padding-bottom: 1rem;
+    margin-top: -1.4rem;
+  }
+  
+
+  .footer-header {
+    margin-bottom: -1.25rem;
+  }
+  
+
+  .img-footer {
+    display: flex;
+    align-content: left;
+  }
+  
+  .img-footer > img {
+    max-height: 8rem;
+    margin-right: 3rem;
+    margin-left: 20px;
+    margin-top: 20px;
+  
+    background-color: white;
+    padding: 0.5rem;
+  }
+
+  .contact {
+    display: none;
+  }
+  .main {
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background-color: #495e57;
+    color: white;
+  }
+  .main-Container {
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: visible;
+  }

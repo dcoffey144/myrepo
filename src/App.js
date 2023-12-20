@@ -1,26 +1,15 @@
 import './App.css';
-import { useState } from "react";
-import Header from "./components/Header"
-/*import Main from "./components/Main"*/
-
 import Routing from "./components/Routing";
+import Footer from "./components/Footer"
 
 function App() {
-  /*const [bookingFormOpen, setBookingFormOpen] = useState(false);
 
-  function openBookingFormHandler() {
-    setBookingFormOpen(!bookingFormOpen);
-  }*/
-
-/* return (
-  <Header onOpenLayout={openBookingFormHandler}></Header>
-      <Main onOpenLayout={openBookingFormHandler}></Main>
-      <Speacials></Speacials>
-      <footer style={{ height: "5rem" }}></footer> */
+      <footer style={{ height: "5rem" }}>this is the footer</footer> 
   return (
     <>
 
     <Routing />
+    <Footer />
 
     </>
   );

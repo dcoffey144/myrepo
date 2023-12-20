@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import logo from "../images/logo.png";
-import classes from "./Header.module.css"
+import classes from "../css/Header.module.css"
 
 export default function Header({ onOpenLayout }) {
   const [drawerOpen, setDawerOpen] = useState(false);
-
-  function drawerToggleHandlerByShihFengHsu() {
-    setDawerOpen(!drawerOpen);
-  }
 
   return (
     <header className={classes.mainHeader}>
@@ -16,7 +12,7 @@ export default function Header({ onOpenLayout }) {
           <img src={logo} alt="logo" className={classes.logo} />
           <div
             className={classes.drawerButton}
-            onClick={drawerToggleHandlerByShihFengHsu}
+            
           >
             <span></span>
             <span></span>
@@ -34,11 +30,8 @@ export default function Header({ onOpenLayout }) {
           <li>
           <a href="/">Menu</a>
           </li>
-          <li onClick={() => {
-              onOpenLayout();
-            }}
-          >
-            <a href="/">Reservation</a>
+          <li>
+            <a href="/reservations">Reservation</a>
           </li>
           <li>
           <a href="/">Order Online</a>
